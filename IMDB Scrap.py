@@ -8,5 +8,6 @@ try:
     source.raise_for_status() # Check if the request was successful or not
 
     soup= BeautifulSoup(source.text, 'html.parser') # Create a BeautifulSoup object to parse the HTML content
+    print(soup)
 except Exception as e:
     print(f"Error fetching the webpage: {e}")
